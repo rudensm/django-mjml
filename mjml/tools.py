@@ -40,8 +40,8 @@ def _mjml_render_by_cmd(mjml_code: str) -> str:
         stdout_tmp_f.seek(0)
         stdout = stdout_tmp_f.read()
 
-    if stderr:
-        raise RuntimeError(f'MJML stderr is not empty: {force_str(stderr)}.')
+    # if stderr:
+    #     raise RuntimeError(f'MJML stderr is not empty: {force_str(stderr)}.')
 
     return force_str(stdout)
 
